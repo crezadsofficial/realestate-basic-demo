@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Developers - Find Your Dream Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Shreya Developers</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#properties" class="nav-link">Properties</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Home</h1>
+            <p>Affordable and premium flats available</p>
+            <a href="#properties" class="cta-button">View Properties</a>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2 class="section-title">Our Properties</h2>
+            <div class="properties-grid">
+                <div class="property-card" data-modal="modal1">
+                    <div class="property-image">
+                        <img src="images/property1.jpg" alt="Property 1">
+                        <div class="property-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Sunshine Residency</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Solapur, Maharashtra</p>
+                        <p class="bhk">2BHK</p>
+                        <div class="price">₹45,00,000</div>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="property-card" data-modal="modal2">
+                    <div class="property-image">
+                        <img src="images/property2.jpg" alt="Property 2">
+                        <div class="property-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Green Valley Apartments</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Solapur, Maharashtra</p>
+                        <p class="bhk">3BHK</p>
+                        <div class="price">₹65,00,000</div>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+
+                <div class="property-card" data-modal="modal3">
+                    <div class="property-image">
+                        <img src="images/property3.jpg" alt="Property 3">
+                        <div class="property-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Prestige Towers</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Solapur, Maharashtra</p>
+                        <p class="bhk">1BHK</p>
+                        <div class="price">₹32,00,000</div>
+                        <button class="view-more-btn">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Shreya Developers</h2>
+            <div class="about-text">
+                <p>Shreya Developers is a leading real estate company committed to delivering exceptional residential properties. With years of experience, we specialize in creating modern, comfortable, and affordable homes.</p>
+                <p>Our projects are strategically located in prime areas of Solapur, offering excellent connectivity and world-class amenities. We believe in transparency, customer satisfaction, and sustainable development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>crezads.official@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/919923873950?text=I%20am%20interested%20in%20your%20property" class="whatsapp-btn" target="_blank">
+                            Chat Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Shreya Developers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-gallery">
+                <img src="images/property1.jpg" alt="Sunshine Residency">
+            </div>
+            <div class="modal-details">
+                <h2>Sunshine Residency</h2>
+                <p class="modal-location"><i class="fas fa-map-marker-alt"></i> Solapur, Maharashtra</p>
+                <div class="modal-price">₹45,00,000</div>
+                <div class="modal-description">
+                    <h4>Description</h4>
+                    <p>Luxurious 2BHK apartment in prime location with modern amenities.</p>
+                </div>
+                <div class="modal-amenities">
+                    <h4>Amenities</h4>
+                    <ul>
+                        <li>✓ 24/7 Security</li>
+                        <li>✓ Swimming Pool</li>
+                        <li>✓ Gymnasium</li>
+                        <li>✓ Power Backup</li>
+                        <li>✓ Lift Facility</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/919923873950?text=Hi%2C%20I'm%20interested%20in%20Sunshine%20Residency" class="inquire-btn" target="_blank">Inquire Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-gallery">
+                <img src="images/property2.jpg" alt="Green Valley">
+            </div>
+            <div class="modal-details">
+                <h2>Green Valley Apartments</h2>
+                <p class="modal-location"><i class="fas fa-map-marker-alt"></i> Solapur, Maharashtra</p>
+                <div class="modal-price">₹65,00,000</div>
+                <div class="modal-description">
+                    <h4>Description</h4>
+                    <p>Spacious 3BHK apartment with premium finishes and breathtaking views.</p>
+                </div>
+                <div class="modal-amenities">
+                    <h4>Amenities</h4>
+                    <ul>
+                        <li>✓ Club House</li>
+                        <li>✓ Children's Play Area</li>
+                        <li>✓ Jogging Track</li>
+                        <li>✓ 24/7 Water Supply</li>
+                        <li>✓ High-Speed Elevators</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/919923873950?text=Hi%2C%20I'm%20interested%20in%20Green%20Valley" class="inquire-btn" target="_blank">Inquire Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-gallery">
+                <img src="images/property3.jpg" alt="Prestige Towers">
+            </div>
+            <div class="modal-details">
+                <h2>Prestige Towers</h2>
+                <p class="modal-location"><i class="fas fa-map-marker-alt"></i> Solapur, Maharashtra</p>
+                <div class="modal-price">₹32,00,000</div>
+                <div class="modal-description">
+                    <h4>Description</h4>
+                    <p>Compact yet comfortable 1BHK apartment perfect for young professionals.</p>
+                </div>
+                <div class="modal-amenities">
+                    <h4>Amenities</h4>
+                    <ul>
+                        <li>✓ Security System</li>
+                        <li>✓ Rooftop Terrace</li>
+                        <li>✓ Laundry Facility</li>
+                        <li>✓ Ample Parking</li>
+                        <li>✓ WiFi Connectivity</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/919923873950?text=Hi%2C%20I'm%20interested%20in%20Prestige%20Towers" class="inquire-btn" target="_blank">Inquire Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Modal Functionality
+        const propertyCards = document.querySelectorAll('.property-card');
+        const modals = document.querySelectorAll('.modal');
+        const closes = document.querySelectorAll('.close');
+
+        propertyCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const modalId = card.getAttribute('data-modal');
+                document.getElementById(modalId).style.display = 'block';
+            });
+        });
+
+        closes.forEach(close => {
+            close.addEventListener('click', () => {
+                close.parentElement.parentElement.style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+            }
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
